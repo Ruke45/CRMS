@@ -69,6 +69,18 @@
     <Compile Include="MainFrm.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewProduct_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewProduct_.Designer.cs">
+      <DependentUpon>NewProduct_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Product.Designer.cs">
+      <DependentUpon>New_Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Products.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Product.resx">
+      <DependentUpon>New_Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
