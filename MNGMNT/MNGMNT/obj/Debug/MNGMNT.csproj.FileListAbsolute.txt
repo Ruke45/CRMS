@@ -15,3 +15,15 @@ C:\Users\Admin\Documents\Visual Studio 2012\Projects\MNGMNT\MNGMNT\obj\Debug\MNG
 C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\bin\Debug\MNGMNT.exe.config
 C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.exe
 C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.pdb
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\bin\Debug\MNGMNT.exe
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\bin\Debug\MNGMNT.pdb
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.Attendence.resources
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.Dashboard.resources
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.Employee.resources
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.MainFrm.resources
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.New_Product.resources
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.Products.resources
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.Settings.resources
+C:\Users\Admin\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.csproj.GenerateResource.Cache

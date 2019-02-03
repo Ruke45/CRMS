@@ -32,11 +32,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAddNewProduct = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -66,11 +66,28 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btnAddNewProduct);
             this.panel4.Location = new System.Drawing.Point(13, 51);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(235, 140);
             this.panel4.TabIndex = 6;
+            // 
+            // btnAddNewProduct
+            // 
+            this.btnAddNewProduct.BackColor = System.Drawing.Color.White;
+            this.btnAddNewProduct.FlatAppearance.BorderSize = 0;
+            this.btnAddNewProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewProduct.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewProduct.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAddNewProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewProduct.Image")));
+            this.btnAddNewProduct.Location = new System.Drawing.Point(11, 11);
+            this.btnAddNewProduct.Name = "btnAddNewProduct";
+            this.btnAddNewProduct.Size = new System.Drawing.Size(213, 118);
+            this.btnAddNewProduct.TabIndex = 3;
+            this.btnAddNewProduct.Text = "New Product";
+            this.btnAddNewProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddNewProduct.UseVisualStyleBackColor = false;
+            this.btnAddNewProduct.Click += new System.EventHandler(this.btnAddNewProduct_Click);
             // 
             // panel1
             // 
@@ -80,6 +97,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(235, 140);
             this.panel1.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(11, 11);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(213, 118);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Resources";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -106,38 +139,6 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(11, 11);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 118);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Resources";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(11, 11);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 118);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "New Product";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,7 +164,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddNewProduct;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel3;

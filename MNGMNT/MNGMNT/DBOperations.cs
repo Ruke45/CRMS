@@ -9,9 +9,9 @@ namespace MNGMNT
 {
     public class DBOperations
     {
-        SqlConnection connection = new SqlConnection("server= localhost; database=C_sharp_SCMS; integrated security=true; trusted_connection=true;");
+        SqlConnection connection = new SqlConnection("server= localhost; database=CRMS; integrated security=true; trusted_connection=true;");
 
-        public int Update_DB(string sql)
+        public int Add_Update(string sql)
         {
             int n = 0;
             try

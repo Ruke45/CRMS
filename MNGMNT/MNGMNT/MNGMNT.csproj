@@ -50,6 +50,17 @@
     <Compile Include="Attendence.Designer.cs">
       <DependentUpon>Attendence.cs</DependentUpon>
     </Compile>
+    <Compile Include="Business_\Product_.cs" />
+    <Compile Include="CRMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRMSDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +137,28 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CRMSDataSet.xsc">
+      <DependentUpon>CRMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CRMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CRMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CRMSDataSet.xss">
+      <DependentUpon>CRMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CRMSDataSet1.xsc">
+      <DependentUpon>CRMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CRMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CRMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CRMSDataSet1.xss">
+      <DependentUpon>CRMSDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

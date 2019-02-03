@@ -16,5 +16,11 @@ namespace MNGMNT
         {
             InitializeComponent();
         }
+
+        private void btnAddNewProduct_Click(object sender, EventArgs e)
+        {
+            New_Product N = new New_Product(); /*Call the New_Product Window*/
+            N.Show();
+        }
     }
 }
