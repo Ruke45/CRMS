@@ -17,7 +17,7 @@ namespace MNGMNT.Business_
         public DateTime LaunchedDate { set; get; }
         public string AnalysisID { set; get; }
         public string ProductStatus { set; get; }
-        public int ProductDuration { set; get; }
+        public string ProductDuration { set; get; }
         public string CancledReason { set; get; }
         public string ProductLifeCycle { set; get; }
         public string Description { set; get; }
@@ -33,8 +33,8 @@ namespace MNGMNT.Business_
                                                                + NameofProduct + "','" 
                                                                + DateTime.Now + "'," 
                                                                + AnalysisID + ",'" 
-                                                               + ProductStatus + "'," 
-                                                               + ProductDuration + ",'" 
+                                                               + ProductStatus + "','" 
+                                                               + ProductDuration + "','" 
                                                                + "N/A" + "','" 
                                                                + ProductLifeCycle + "','" 
                                                                + Description + "')";
@@ -81,5 +81,6 @@ namespace MNGMNT.Business_
             }
 
         }
+
     }
 }

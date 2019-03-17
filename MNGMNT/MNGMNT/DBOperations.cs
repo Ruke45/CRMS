@@ -4,12 +4,13 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace MNGMNT
 {
     public class DBOperations
     {
-        SqlConnection connection = new SqlConnection("server= localhost; database=CRMS; integrated security=true; trusted_connection=true;");
+        SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["MNGMNT.Properties.Settings.CRMSConnectionString"].ToString());
 
         public int Add_Update(string sql)
         {

@@ -22,5 +22,11 @@ namespace MNGMNT
             New_Product N = new New_Product(); /*Call the New_Product Window*/
             N.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            View_Product V = new View_Product();
+            V.Show();
+        }
     }
 }

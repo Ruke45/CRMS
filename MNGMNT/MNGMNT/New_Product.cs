@@ -20,15 +20,49 @@ namespace MNGMNT
 
         private void New_Product_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'cRMSDataSet1.tblProductStatus' table. You can move, or remove it, as needed.
-            this.tblProductStatusTableAdapter.Fill(this.cRMSDataSet1.tblProductStatus);
-            // TODO: This line of code loads data into the 'cRMSDataSet.tblEmployee' table. You can move, or remove it, as needed.
-            this.tblEmployeeTableAdapter.Fill(this.cRMSDataSet.tblEmployee);
+            try
+            {
+                // TODO: This line of code loads data into the 'cRMSDataSet1.tblProductStatus' table. You can move, or remove it, as needed.
+                this.tblProductStatusTableAdapter.Fill(this.cRMSDataSet1.tblProductStatus);
+                // TODO: This line of code loads data into the 'cRMSDataSet.tblEmployee' table. You can move, or remove it, as needed.
+                this.tblEmployeeTableAdapter.Fill(this.cRMSDataSet.tblEmployee);
+            }
+            catch (Exception Ex)
+            {
+                string s = Ex.Message;
+            }
 
         }
 
         private void btnSaveNewProduct_Click(object sender, EventArgs e)
         {
+
+            if (txtPO.Text == "")
+            {
+                MessageBox.Show("Insert Product Owner");
+                return;
+            }
+            if (txtPN.Text == "")
+            {
+                MessageBox.Show("Insert Name of the Product");
+                return;
+            }
+            if (txtPDUra.Text == "")
+            {
+                MessageBox.Show("Insert Product Duration");
+                return;
+            }
+            if (txtPM.Text == "")
+            {
+                MessageBox.Show("Insert Product Methodology");
+                return;
+            }
+            if (txtPD.Text == "")
+            {
+                MessageBox.Show("Insert Product Description");
+                return;
+            }
+
             Product_ NP = new Product_(); /* New Product Class Object */
 
             /* Add Textbox values to the NP(Product object value holders ) */
@@ -36,7 +70,7 @@ namespace MNGMNT
             NP.NameofProduct = txtPN.Text;
             NP.AnalysisID = cbAID.SelectedValue.ToString();
             NP.ProductStatus = cbPS.SelectedValue.ToString();
-            NP.ProductDuration = Convert.ToInt32(txtPDUra.Text);
+            NP.ProductDuration = txtPDUra.Text;
             NP.ProductLifeCycle = txtPM.Text;
             NP.Description = txtPD.Text;
 
