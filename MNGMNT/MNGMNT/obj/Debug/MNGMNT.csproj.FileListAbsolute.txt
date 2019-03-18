@@ -43,3 +43,5 @@ C:\Users\Admin_\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.Properties.
 C:\Users\Admin_\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.Settings.resources
 C:\Users\Admin_\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.csproj.GenerateResource.Cache
 C:\Users\Admin_\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.View_Product.resources
+C:\Users\Admin_\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.New_Task_Category.resources
+C:\Users\Admin_\Documents\GitHub\CRMS\MNGMNT\MNGMNT\obj\Debug\MNGMNT.View_TaskCategory.resources

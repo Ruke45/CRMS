@@ -52,6 +52,7 @@
       <DependentUpon>Attendence.cs</DependentUpon>
     </Compile>
     <Compile Include="Business_\Product_.cs" />
+    <Compile Include="Business_\TaskCategory_.cs" />
     <Compile Include="CRMSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -66,6 +67,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CRMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRMSDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>UserControl</SubType>
@@ -92,6 +98,12 @@
     <Compile Include="New_Product.Designer.cs">
       <DependentUpon>New_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="New_Task_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Task_Category.Designer.cs">
+      <DependentUpon>New_Task_Category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Products.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,6 +124,12 @@
     <Compile Include="View_Product.Designer.cs">
       <DependentUpon>View_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_TaskCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_TaskCategory.Designer.cs">
+      <DependentUpon>View_TaskCategory.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Attendence.resx">
       <DependentUpon>Attendence.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="New_Product.resx">
       <DependentUpon>New_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Task_Category.resx">
+      <DependentUpon>New_Task_Category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
@@ -145,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View_Product.resx">
       <DependentUpon>View_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_TaskCategory.resx">
+      <DependentUpon>View_TaskCategory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="CRMSDataSet.xsc">
       <DependentUpon>CRMSDataSet.xsd</DependentUpon>
@@ -178,6 +202,17 @@
     </None>
     <None Include="CRMSDataSet2.xss">
       <DependentUpon>CRMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CRMSDataSet3.xsc">
+      <DependentUpon>CRMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CRMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CRMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CRMSDataSet3.xss">
+      <DependentUpon>CRMSDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

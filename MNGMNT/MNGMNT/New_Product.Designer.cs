@@ -37,11 +37,14 @@
             this.txtPM = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.cbPS = new System.Windows.Forms.ComboBox();
+            this.tblProductStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cRMSDataSet1 = new MNGMNT.CRMSDataSet1();
             this.panel10 = new System.Windows.Forms.Panel();
             this.cbAID = new System.Windows.Forms.ComboBox();
             this.tblEmployeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cRMSDataSet = new MNGMNT.CRMSDataSet();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.txtPDUra = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtPN = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -52,6 +55,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -66,15 +70,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.tblEmployeeTableAdapter = new MNGMNT.CRMSDataSetTableAdapters.tblEmployeeTableAdapter();
-            this.cRMSDataSet1 = new MNGMNT.CRMSDataSet1();
-            this.tblProductStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblProductStatusTableAdapter = new MNGMNT.CRMSDataSet1TableAdapters.tblProductStatusTableAdapter();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtPDUra = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProductStatusBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cRMSDataSet1)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblEmployeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRMSDataSet)).BeginInit();
@@ -91,8 +93,6 @@
             this.panel6.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cRMSDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProductStatusBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -209,6 +209,16 @@
             this.cbPS.TabIndex = 1;
             this.cbPS.ValueMember = "StatusId";
             // 
+            // tblProductStatusBindingSource
+            // 
+            this.tblProductStatusBindingSource.DataMember = "tblProductStatus";
+            this.tblProductStatusBindingSource.DataSource = this.cRMSDataSet1;
+            // 
+            // cRMSDataSet1
+            // 
+            this.cRMSDataSet1.DataSetName = "CRMSDataSet1";
+            this.cRMSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.cbAID);
@@ -248,6 +258,14 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(455, 32);
             this.panel8.TabIndex = 17;
+            // 
+            // txtPDUra
+            // 
+            this.txtPDUra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPDUra.Location = new System.Drawing.Point(5, 3);
+            this.txtPDUra.Name = "txtPDUra";
+            this.txtPDUra.Size = new System.Drawing.Size(447, 26);
+            this.txtPDUra.TabIndex = 3;
             // 
             // panel4
             // 
@@ -339,6 +357,16 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(173, 32);
             this.panel7.TabIndex = 6;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 6);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(129, 20);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Product Duration";
             // 
             // panel3
             // 
@@ -461,37 +489,9 @@
             // 
             this.tblEmployeeTableAdapter.ClearBeforeFill = true;
             // 
-            // cRMSDataSet1
-            // 
-            this.cRMSDataSet1.DataSetName = "CRMSDataSet1";
-            this.cRMSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblProductStatusBindingSource
-            // 
-            this.tblProductStatusBindingSource.DataMember = "tblProductStatus";
-            this.tblProductStatusBindingSource.DataSource = this.cRMSDataSet1;
-            // 
             // tblProductStatusTableAdapter
             // 
             this.tblProductStatusTableAdapter.ClearBeforeFill = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 6);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(129, 20);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Product Duration";
-            // 
-            // txtPDUra
-            // 
-            this.txtPDUra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPDUra.Location = new System.Drawing.Point(5, 3);
-            this.txtPDUra.Name = "txtPDUra";
-            this.txtPDUra.Size = new System.Drawing.Size(447, 26);
-            this.txtPDUra.TabIndex = 3;
             // 
             // New_Product
             // 
@@ -501,7 +501,7 @@
             this.ClientSize = new System.Drawing.Size(682, 436);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.panel17);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "New_Product";
             this.Text = "New_Product";
             this.Load += new System.EventHandler(this.New_Product_Load);
@@ -510,6 +510,8 @@
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tblProductStatusBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cRMSDataSet1)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tblEmployeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRMSDataSet)).EndInit();
@@ -538,8 +540,6 @@
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             this.panel18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cRMSDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProductStatusBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
